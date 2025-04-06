@@ -117,6 +117,7 @@ Matrix MultiplicationElByEl(const Matrix& A, const Matrix& B) {//поэлеме�
 	}
 	return multMatrix;
 }
+
 Matrix DivisionElByEl(const Matrix& A, const Matrix& B){//(./ A B) — поэлементное деление матриц A и B одинакового размера (получается матрица такого же размера как матрица A с элементами aij / bij),
 	Matrix multMatrix;
 	multMatrix.cols_ = A.cols_;
@@ -137,6 +138,7 @@ Matrix DivisionElByEl(const Matrix& A, const Matrix& B){//(./ A B) — поэл�
 	}
 	return multMatrix;
 }
+
 Matrix Minimal(const Matrix& A, const Matrix& B) {
 	//матрицы должны быть одинакового размера
 	Matrix min;
@@ -154,6 +156,7 @@ Matrix Minimal(const Matrix& A, const Matrix& B) {
 	}
 	return min;
 }
+
 Matrix Maximum(const Matrix& A, const Matrix& B) {
 	//матрицы должны быть одинакового размера
 	Matrix min;
